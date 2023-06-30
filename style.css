@@ -1,0 +1,213 @@
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  background: rgb(86, 0, 206);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #ffffff;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (min-width: 640px) and (max-width:959px) {
+    .menu {
+    width: 100%;
+    order: 3;
+  } 
+}
+
+@media (min-width: 640px) {
+  .header-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+.header-wrapper {
+  margin: 50px 30px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-list {  
+  list-style-type: none;
+  padding: 0;
+  font-size: 28px;
+}
+
+.menu-item {
+  padding-right: 20px;
+}
+
+.menu-item-link:hover {
+  text-decoration: underline;
+}
+
+.search-form {
+  display: block;
+  position: relative;
+}
+
+.search-form-field {
+  width: 250px;
+  height: 40px;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  color: #fff;
+  background: rgb(86, 0, 206);
+  border: 1px solid #ffffff;
+  padding: 10px 10px 10px 30px;
+
+  display: inline-block;
+  vertical-align: middle;
+
+  background-image: url("https://netology-code.github.io/html-2-homeworks/form-elements/search-field/img/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px;
+  background-position: left 8px center;
+}
+
+.search-form-field:hover {
+  outline: none;  
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {  
+  margin: 0 30px 40px 30px;
+}
+
+.main-header {
+  display: block;
+}
+
+.main-header-container {
+  line-height: 40px;
+  position: relative;
+  border-left: 7px solid #ff4500;
+  padding: 20px;
+}
+
+.main-header-title {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 0 0;
+}
+
+.main-header-slogan {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.main-header-desc {
+  font-size: 20px;
+}
+
+.form-user {
+  border: 2px solid #fff;
+  padding: 30px 20px;
+  margin: 40px 0;
+  position: relative;
+}
+
+.form-user-wrapper {
+  display: grid;  
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  font-size: 20px
+}
+
+.form-row {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.field {
+  width: calc( 100% - 20px);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  padding: 5px 5px;
+}
+
+.full-width {
+    grid-column: 1 / 3;   
+}
+
+.form-btn {
+  width: 160px;
+  height: 40px;
+  background-color: #ff4500;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  align-items: center;
+}
+
+.form-user:after {  
+  content: '';
+	position: absolute;
+	width: 50px;
+	height: 200px;
+  background: url(img/close.svg);
+  background-position: 0 0, center;
+  background-size: contain;
+  background-repeat: repeat-y;
+  top: -15px;
+  right: -42px;
+}
+
+.form-user:before {  
+  content: '';
+	position: absolute;
+	width: 50px;
+	height: 200px;
+  background: url(img/close.svg);
+  background-position: 0 0, center;
+  background-size: contain;
+  background-repeat: repeat-y;
+  bottom: -15px;
+  left: -42px;
+}
